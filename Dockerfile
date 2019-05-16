@@ -1,6 +1,10 @@
 FROM python:3.7-stretch
-
-RUN apt-get update && apt-get install -y svn
+MAINTAINER Ithuan
 
 WORKDIR /opt
-RUN svn checkout http://word2vec.googlecode.com/svn/trunk/
+RUN git clone https://github.com/dav/word2vec.git
+
+WORKDIR /opt/word2vec
+RUN make
+
+RUN echo 'import word2vec' | python
