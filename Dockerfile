@@ -1,10 +1,15 @@
 FROM python:3.7-stretch
 MAINTAINER Ithuan
 
+
 WORKDIR /opt
-RUN git clone https://github.com/dav/word2vec.git
+RUN pip install gensim
 
-WORKDIR /opt/word2vec
-RUN make
+ARG BUN=bun.txt
 
-RUN echo 'import word2vec' | python
+COPY ${BUN} bun.txt
+COPY hunlian.py .
+RUN python hunlian.py
+
+COPY tshue.py .
+CMD python tshue.py 逐-家｜tak8-ke1
