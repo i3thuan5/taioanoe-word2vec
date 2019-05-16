@@ -1,7 +1,6 @@
 # taioanoe-word2vec
-word2vec
 
-###
+## 全羅
 ### 文本大細
 - 585250詞
 - 12131236句
@@ -16,7 +15,8 @@ word2vec
 $ time docker build . --build-arg BUN=tsuanlo.txt.gz -t word2vec:tsuanlo
 ```
 
-### `$ docker run --rm word2vec:tsuanlo python tshue.py tsa1-poo1`
+### tsa1-poo1
+`$ docker run --rm word2vec:tsuanlo python tshue.py tsa1-poo1`
 ```
 ta1-poo1	0.7212225794792175
 tsa1-poo1-e5	0.7107069492340088
@@ -30,7 +30,8 @@ tsa1-boo2-gin2-a2	0.5938881039619446
 tsa1-boo2	0.5852255821228027
 ```
 
-### `$ docker run --rm word2vec:tsuanlo python tshue.py ho2`
+### ho2
+`$ docker run --rm word2vec:tsuanlo python tshue.py ho2`
 ```
 ho2-e5	0.6787269711494446
 u7-ho2	0.636854887008667
@@ -63,7 +64,8 @@ time docker build . --build-arg BUN=hanlo.txt.gz -t word2vec:hanlo
 
 分詞格式請去[鬥拍字](https://鬥拍字.意傳.台灣/%E8%AC%9B/%E6%9F%A5%E5%9F%94)khóo-pì。
 
-### `$ docker run --rm word2vec:hanlo python tshue.py 查-埔｜tsa1-poo1`
+### 查-埔｜tsa1-poo1
+`$ docker run --rm word2vec:hanlo python tshue.py 查-埔｜tsa1-poo1`
 ```
 批｜phue1	0.9988206624984741
 間｜king1	0.9987307786941528
@@ -77,7 +79,8 @@ time docker build . --build-arg BUN=hanlo.txt.gz -t word2vec:hanlo
 逐｜tak8	0.9983291625976562
 ```
 
-### `$ docker run --rm word2vec:hanlo python tshue.py 好｜ho2`
+### 好｜ho2
+`$ docker run --rm word2vec:hanlo python tshue.py 好｜ho2`
 ```
 毋-通｜m7-thang1	0.9994579553604126
 食｜tsiah8	0.999347984790802
