@@ -5,9 +5,11 @@ MAINTAINER Ithuan
 WORKDIR /opt
 RUN pip install gensim
 
-ARG BUN=bun.txt
+ARG BUN=bun.txt.gz
 
-COPY ${BUN} bun.txt
+COPY ${BUN} bun.txt.gz
+RUN gzip -d bun.txt.gz
+
 COPY hunlian.py .
 RUN python hunlian.py
 
